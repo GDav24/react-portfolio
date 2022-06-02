@@ -42,6 +42,12 @@ function Projects({ name }) {
       appUrl: "https://gdav24.github.io/challenge-3/",
       index: 5,
     },
+    {
+    name: <>devFinder</>,
+      Github: "https://github.com/GDav24/finalPiece",
+      appUrl: "",
+      index: 5,
+    },
   ]);
 
   return (
