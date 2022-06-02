@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import {Container, Row, Col} from "react-bootstrap";
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faPaw } from "@fortawesome/free-solid-svg-icons";
-//import { SlideFade } from "@chakra-ui/react";
-//import LgScreenCarousel from '../LgScreenCarousel';
+
 
 function Projects({ name }) {
   const [smShowDescription, toggleSmShowDescription] = useState(false)
@@ -11,39 +8,38 @@ function Projects({ name }) {
   const [apps] = useState([
     {
       name: <>Loan Me a Home</>,
-      Github: "https://github.com/dieres2010/loanMeAHome.git",
+      Github: "https://github.com/gdav24/loanMeAHome.git",
       appUrl: "https://loanmeahome.herokuapp.com/",
       index: 1,
     },
     {
-      name: <>Git Pokemon</>,
-      Github: "https://github.com/dieres2010/Pokemon-App.git",
-      appUrl:"https://dieres2010.github.io/Pokemon-App/",
+      name: <>goRecette</>,
+      Github: "https://github.com/gdav24/gorecette.git",
+      appUrl:"https://gdav24.github.io/gorecette/",
       index: 2,
     },
     {
-      name: <>Budget Tracker</>,
-      Github: "https://github.com/dieres2010/budget-tracker.git",
-      appUrl:
-        "https://ancient-journey-63025.herokuapp.com/",
+      name: <>Work Day Scheduler</>,
+      Github: "https://github.com/gdav24/workday-scheduler.git",
+      appUrl:"https://gdav24.github.io/workday-scheduler/",
       index: 3,
     },
     {
       name: <>Note Taker</>,
-      Github: "https://github.com/dieres2010/note-taker.git",
-      appUrl: "https://infinite-crag-03666.herokuapp.com/",
+      Github: "https://github.com/gdav24/note-taker.git",
+      appUrl: "https://note-taker-57.herokuapp.com/",
       index: 4,
     },
     {
       name: <>Coding-Quiz</>,
-      Github: "https://github.com/dieres2010/coding-quiz.git",
-      appUrl: "https://dieres2010.github.io/coding-quiz/",
+      Github: "https://github.com/GDav24/CodingQuiz",
+      appUrl: "https://gdav24.github.io/CodingQuiz/",
       index: 5,
     },
     {
       name: <>Password Generator</>,
-      Github: "https://github.com/dieres2010/passwd-generator.git",
-      appUrl: "https://dieres2010.github.io/passwd-generator/",
+      Github: "https://github.com/GDav24/challenge-3-js",
+      appUrl: "https://gdav24.github.io/challenge-3/",
       index: 5,
     },
   ]);
@@ -54,20 +50,7 @@ function Projects({ name }) {
         {apps.map((app, index) => (
           <li>
             <div>
-              <Container>
-                <Row className="justify-content-md-center">
-                  <Col md="auto">
-                    <h3>{app.name}</h3>
-                    <a href={app.Github}>Github</a><br></br>
-                    <a href={app.appUrl}>Live Application or Demo</a><br></br>
-                    <img
-                      src={require(`../../assets/img/apps/small/${index}.PNG`)}
-                      style={{ width: "50%", height: "50%"}}
-                      alt={app.name}
-                    />
-                  </Col>
-                </Row>
-              </Container>
+       
             </div>
           </li>
         ))}

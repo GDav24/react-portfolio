@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import pdf from "../../assets/../assets/Diego Restrepo's Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
@@ -18,15 +17,6 @@ function Resume() {
     <h1 id="resume">Resume</h1>
     <Container fluid className="resume-section">
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "150px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download Resume
-          </Button>
         </Row>
       </Container>
       <br></br>

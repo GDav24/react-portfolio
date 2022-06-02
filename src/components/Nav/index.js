@@ -3,7 +3,7 @@ import { capitalizeFirstLetter }from '../../utils/helpers';
 
 
 function Nav(props) {
-    document.title = 'Diego Restrepo Portfolio'
+    document.title = 'Gustavo Davila Portfolio'
     const {
         categories = [],
         setCurrentCategory,
@@ -18,7 +18,7 @@ function Nav(props) {
     return (
         <header className="p-5 py-10 mx-auto">
             <div className="flex items-center justify-center mb-2">
-                <h2><a data-testid="link" href="/" className="md:text-4xl text-3xl text-sky-400">Diego Restrepo</a></h2>
+                <h2><a data-testid="link" href="/" className="md:text-4xl text-3xl text-sky-400">Gustavo Davila</a></h2>
             </div>
             <nav className="flex items-center justify-center">
                 <ul className="flex flex-row md:text-xl text-lg">
